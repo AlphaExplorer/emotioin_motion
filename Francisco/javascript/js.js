@@ -1,6 +1,7 @@
 //Globarl Variable Declaration 
-var happyArray = ["happy", "hilarious", "histerical", "funny", "lol", "happy babies"];
-var sadArray = ["unhappy", "regretful", "tantrum", "dissapointed", "melancholy", "crying"];
+var happyArray = ["happy", "hilarious", "histerical", "funny", "people falling", "happy babies"];
+var cheerUp = ["cheer up", "life is great", "I am ok", "maybe tomorrow", "don't worry", "crying"];
+var sadArray = ["sad", "life sucks", "tantrum", "fuck!", "damn it", "crying"];
 var keyword_counter = 0;
 var gif_response_storage;
 var like_counter = 0;
@@ -60,7 +61,7 @@ $("#happy").on("click", function ()
 
 $("#sad").on("click", function () 
 {
-    var keyword = sadArray[keyword_counter]
+    var keyword = cheerUp[keyword_counter]
     apiCall(keyword);
     buttonSwitch();
 });
@@ -77,7 +78,7 @@ $(document).on("click", "#unlike", function(){
     unlike_counter ++;
     total_counter ++;
     gif_generator(gif_response_storage, total_counter);
-    if (unlike_counter >= 2)
+    if (unlike_counter >= 3)
     {
         like_counter = 0;
         unlike_counter = 0;
