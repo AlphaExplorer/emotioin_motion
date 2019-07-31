@@ -1,0 +1,46 @@
+#results {
+    background-color: aqua;
+}
+
+#display {
+    margin-bottom: 800px;
+}
+
+body {
+    background-image: url("https://cdn.hipwallpaper.com/i/94/27/IZwTnb.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display:block;
+    width:100%;
+}
+
+.container{
+    margin-right:0px;
+    margin-left: 0px;
+}
+
+img {
+    height: 550px;
+    max-width: 100%;
+}
+
+#buttons {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 50px;
+    display:inline;
+    width: 100%;
+}
+
+p{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
+
+#display {
+    margin-top: 50px;
+}
